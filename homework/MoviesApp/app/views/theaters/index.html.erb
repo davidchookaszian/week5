@@ -21,7 +21,7 @@
 
       <td><%= link_to 'Show', "/theaters/#{theater.id}" %></td>
       <td><%= link_to 'Edit', "/theaters/#{theater.id}/edit" %></td>
-      <td><%= link_to 'Destroy', "/theaters", method: 'delete', data: { confirm: "Do you really want to delete this theater?" } %></td>
+      <td><%= link_to 'Destroy', "/theaters/#{theater.id}", method: 'delete', data: { confirm: "Do you really want to delete this theater?" } %></td>
 
     </tr>
   <% end %>
